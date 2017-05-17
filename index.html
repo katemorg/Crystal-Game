@@ -5,6 +5,7 @@
 	<title>Crystal Collector</title>
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
@@ -39,8 +40,7 @@
 	    		<p>The value of each crystal is hidden until you click on it. These values change at the start of each new game.</p>
 
 	    			<div class="btn-group" role="group" aria-label="...">
-						<button type="button" class="btn btn-default">Start!</button>
-						<button type="button" class="btn btn-default">Reset</button>
+						<button type="button" class="btn btn-default" id="start-button">Start / Reset Current Game</button>
 					</div>
 	  		</div>
 		</div>
@@ -50,8 +50,8 @@
     <div class='row'>
     	<div class='col-md-4'>
     		<div class="panel panel-default">
-  				<div class="panel-body">
-    				Random Number
+  				<div class="panel-body" id="random-computer-choice">
+  					0
   				</div>
 			</div>
     	</div>
@@ -60,18 +60,18 @@
   				<div class="panel-heading">
 		  			Your total score is:
 		  		</div>
-		  		<div class="panel-body">
-		    		Score
+		  		<div class="panel-body" id='total-score'>
+		    		0
 		  		</div>
 			</div>
     	</div>
     	<div class='col-md-4'>
     		<div class="panel panel-default">
   				<div class="panel-body">
-    				<div class='row'>
+    				<div class='row stats-counter' id='win-counter'>
     				Wins: 
     				</div>
-    				<div class='row'>
+    				<div class='row stats-counter' id='loss-counter'>
     				Losses: 
     				</div>
   				</div>
@@ -82,16 +82,16 @@
 
     <div class='row'>
     	<div class='col-md-3'>
-    		<img class='crystal-images' src='assets/images/red.jpeg'>
+    		<img class='crystals red' src='assets/images/red.jpeg'>
     	</div>
     	<div class='col-md-3'>
-    		<img class='crystal-images' src='assets/images/diamond.jpg'>
+    		<img class='crystals white' src='assets/images/diamond.jpg'>
     	</div>
     	<div class='col-md-3'>
-    		<img class='crystal-images' src='assets/images/green.jpg'>
+    		<img class='crystals green' src='assets/images/green.jpg'>
     	</div>
     	<div class='col-md-3'>
-    		<img class='crystal-images' src='assets/images/blue.jpg'>
+    		<img class='crystals blue' src='assets/images/blue.jpg'>
     	</div>
     </div>
 

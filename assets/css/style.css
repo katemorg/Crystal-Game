@@ -1,7 +1,17 @@
-.crystal-images {
+.crystals {
 	width: 150px;
 	height: 150px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+#random-computer-choice {
+	font-size: 30px;
+	text-align: center;
+	padding: 1em;
+}
+
+.stats-counter {
+	padding: 1em;
 }
 
